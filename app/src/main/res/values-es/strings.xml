@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--General-->
+    <string name="devices">Dispositivos</string>
+    <string name="living_room">Living</string>
+    <string name="title_notifications">Notificaciones</string>
+    <string name="rooms">Habitaciones</string>
+    <!--Aire Ac-->
+    <string name="turnOn">Encendido</string>
+    <string name="turnOff">Apagado</string>
+    <string name="getState">Verificar Estado</string>
+    <string name="status">Estado</string>
+    <string name="statusChanged">Estado Modificado</string>
+    <string name="ac">Aire Acondicionado</string>
+    <string name="setTemperature">Temperatura: </string>
+    <string name="setMode">Modo</string>
+    <string name="setVerticalSwing">Ángulo Vertical</string>
+    <string name="setHorizontalSwing">Ángulo Horizontal</string>
+    <string name="setFanSpeed">Potencia</string>
+    <string name="temperatureChanged">Temperatura Cambiada Con Éxito</string>
+    <string name="modeChanged">Modo Cambiado Con Éxito</string>
+    <string name="verticalSwingChanged">Ángulo Vertical Cambiado Con Éxito</string>
+    <string name="horizontalSwingChanged">Ángulo Horizontal Cambiado Con Éxito</string>
+    <string name="fanSpeedChanged">Velocidad Modificada Con Éxito</string>
+    <!--Alarm-->
+    <string name="alarm">Alarma</string>
+    <string name="oldSecurityCode">Código Viejo</string>
+    <string name="newSecurityCode">Código Nuevo</string>
+    <string name="changeSecurityCode">Cambiar Código</string>
+    <string name="armStay">Activar Modo En Casa</string>
+    <string name="armAway">Activar</string>
+    <string name="disarm">Desactivar</string>
+    <string name="armed">Activada</string>
+    <string name="disarmed">Desactivada</string>
+    <string name="changeAlarmHint">Ingresar clave anterior</string>
+    <string name="activateAlarmHint">Ingresar clave</string>
+    <string name="changeAlarmTitle">Cambiar Codigo</string>
+    <string name="activateAlarmtitle">Activar Alarma</string>
+    <string name="newCodeHint">Ingresar codigo nuevo</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <!--Blind-->
+    <string name="blind">Persiana</string>
+    <string name="closeBlind">Close Blind</string>
+    <string name="openBlind">Open Blind</string>
+    <string name="up">Levantar</string>
+    <string name="down">Bajar</string>
+    <string name="level">Porcentaje Abierto</string>
+    <string name="blindOpenedState">Abierta</string>
+    <string name="blindClosedState">Cerrada</string>
+    <string name="blindClosingState">Cerrando...</string>
+    <string name="blindOpeningState">Abriendo...</string>
+    <!--Puerta-->
+    <string name="door">Puerta</string>
+    <string name="open">Abrir</string>
+    <string name="close">Cerrar</string>
+    <string name="lock">Trabar/Cerrar Con Llave</string>
+    <string name="unlock">Destrabar</string>
+    <string name="lockChanged">Puerta Cambiada Con Éxito</string>
+    <string name="closedAndLocked">La puerta esta cerrada y con traba</string>
+    <string name="closedAndUnLocked">La puerta esta cerrada y destrabada </string>
+    <string name="openedAndUnlocked">La puerta esta abierta y destrabada</string>
+    <string name="openedAndLocked">La puerta esta abierta y con traba</string>
+    <!--Lampara-->
+    <string name="lamp">Lampara</string>
+    <string name="changeColor">Color: </string>
+    <string name="colorChanged">Color Modificado Con Éxito</string>
+    <string name="cool">Frío</string>
+    <string name="heat">Calor</string>
+    <string name="fan">Ventilador</string>
+    <string name="color">Color</string>
+    <string name="colorRed">Rojo</string>
+    <string name="colorBlue">Azul</string>
+    <string name="colorGreen">Verde</string>
+    <string name="colorYellow">Amarillo</string>
+    <string name="changeBrightness">Brillo</string>
+    <!--Timer-->
+    <string name="timer">Temporizador</string>
+    <string name="setInterval">Intervalo</string>
+    <string name="start">Arrancar</string>
+    <string name="stop">Detener</string>
+    <string name="timeIsUp">Temporizador Ha Caducado!</string>
+    <string name="newTimer">Crear Nuevo Temporizador</string>
+    <string name="inactive">Inactivo</string>
+    <string name="active">Activo</string>
+    <string name="timeRemaining">, tiempo restante: </string>
+</resources>

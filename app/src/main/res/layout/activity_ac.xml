@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ac_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="grupo4.smarthome.AcActivity"
+    android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/ac_image"
+                android:src="@drawable/ac"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/devices"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/acGroup" />
+
+            <TextView
+                android:id="@+id/ac_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dispositivo"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_alignTop="@+id/ac_image"
+                android:layout_toEndOf="@+id/ac_image" />
+
+    <Switch
+                android:id="@+id/ac_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ac_image"
+                android:layout_below="@id/ac_name"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/acGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ac_image"
+                android:layout_margin="16dp">
+
+                <TextView
+                    android:id="@+id/temperature_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setTemperature"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/temperatureLevel_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/temperature_seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:max="100"
+                android:layout_below="@id/acGroup" />
+
+            <TextView
+                android:id="@+id/ac_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="@string/setMode"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/temperature_seekBar"/>
+
+            <Spinner
+                android:id="@+id/mode_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/ac_mode"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/mode_prompt"
+                android:entries="@array/mode_items"/>
+
+            <TextView
+                android:id="@+id/ac_verticalSwing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="@string/setVerticalSwing"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/mode_spinner"/>
+
+            <Spinner
+                android:id="@+id/verticalSwing_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/ac_verticalSwing"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/mode_prompt"
+                android:entries="@array/verticalSwing_items"/>
+
+            <TextView
+                android:id="@+id/ac_horizontalSwing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="@string/setHorizontalSwing"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/verticalSwing_spinner"/>
+
+            <Spinner
+                android:id="@+id/horizontalSwing_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/ac_horizontalSwing"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/mode_prompt"
+                android:entries="@array/horizontalSwing_items"/>
+
+            <TextView
+                android:id="@+id/ac_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="@string/setFanSpeed"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/horizontalSwing_spinner"/>
+
+            <Spinner
+                android:id="@+id/speed_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/ac_speed"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/mode_prompt"
+                android:entries="@array/fanSpeed_items"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/ac_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+</RelativeLayout>

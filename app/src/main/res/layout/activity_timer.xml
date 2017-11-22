@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/blind_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="grupo4.smarthome.LampActivity"
+    android:background="#FFFFFF">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/timer_image"
+                android:src="@drawable/timer"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:contentDescription="@string/devices"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:id="@+id/timer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dispositivo"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignTop="@id/timer_image"
+                android:layout_toEndOf="@id/timer_image" />
+
+            <TextView
+                android:id="@+id/timer_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Cuarto"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/timer_name"
+                android:layout_toEndOf="@id/timer_image" />
+
+            <TextView
+                android:id="@+id/new_timer_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="@string/newTimer"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/timer_image" />
+
+
+            <EditText
+                android:id="@+id/timerInput"
+                android:layout_width="match_parent"
+                android:hint="@string/setInterval"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/new_timer_title"
+                android:ems="10"
+                android:inputType="time" />
+
+            <Button
+                android:id="@+id/timer_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start"
+                android:layout_below="@id/timerInput"
+                android:layout_alignParentStart="true"
+                android:layout_margin="16dp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/timer_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>

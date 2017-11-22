@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name" translatable="false">SmartHome</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="devices">Devices</string>
+    <string name="rooms">Rooms</string>
+    <!-- ac, alarm, blind, door, lamp, timer -->
+    <!-- General/Shared -->
+    <string name="turnOn">On</string>
+    <string name="turnOff">Off</string>
+    <string name="getState">Check Status</string>
+    <string name="status">Status</string>
+    <string name="statusChanged">Status Changed</string>
+    <!-- AC -->
+    <string name="ac">Air Conditioner</string>
+    <string name="setTemperature">Temperature: </string>
+    <string name="setMode">Mode</string>
+    <string name="cool">Cool</string>
+    <string name="heat">Heat</string>
+    <string name="fan">Fan</string>
+    <string name="setVerticalSwing">Vertical Angle</string>
+    <string name="setHorizontalSwing">Horizontal Angle</string>
+    <string name="setFanSpeed">Fan Speed</string>
+    <string name="temperatureChanged">Temperature Successfully Adjusted</string>
+    <string name="modeChanged">Mode Successfully Adjusted</string>
+    <string name="verticalSwingChanged">Vertical Angle Successfully Adjusted</string>
+    <string name="horizontalSwingChanged">Horizontal Angle Successfully Adjusted</string>
+    <string name="fanSpeedChanged">Fan Speed Adjusted</string>
+    <!-- Alarm -->
+    <string name="alarm">Alarm</string>
+    <string name="oldSecurityCode">Old Code</string>
+    <string name="newSecurityCode">New Code</string>
+    <string name="changeSecurityCode">Change Code</string>
+    <string name="armStay">Arm Stay At Home Mode</string>
+    <string name="armAway">Arm</string>
+    <string name="disarm">Disarm</string>
+    <string name="armed">Armed</string>
+    <string name="disarmed">Disarmed</string>
+    <string name="changeAlarmHint">Enter old alarm code</string>
+    <string name="activateAlarmHint">Enter alarm code</string>
+    <string name="changeAlarmTitle">Change Alarm Code</string>
+    <string name="activateAlarmtitle">Activate Alarm</string>
+    <string name="newCodeHint">Enter new code</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+
+
+    <!-- Blind -->
+    <string name="blind">Window Blind</string>
+    <string name="closeBlind">Close Blind</string>
+    <string name="openBlind">Open Blind</string>
+    <string name="level">Percentage Opened</string>
+    <string name="blindOpenedState">Opened</string>
+    <string name="blindClosedState">Closed</string>
+    <string name="blindClosingState">Closing...</string>
+    <string name="blindOpeningState">Opening...</string>
+
+
+    <!-- Door -->
+    <string name="door">Door</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="unlock">Unlock</string>
+    <string name="lock">Lock</string>
+    <string name="lockChanged">Door Lock Successfully Changed</string>
+    <string name="closedAndLocked">The door is closed and locked</string>
+    <string name="closedAndUnLocked">The door is closed and unlocked</string>
+    <string name="openedAndUnlocked">The door is open and unlocked</string>
+    <string name="openedAndLocked">The door is open and unlocked</string>
+    <!-- Lamp -->
+    <string name="lamp">Lamp</string>
+    <string name="changeColor">Color: </string>
+    <string name="colorChanged">Color Successfully Adjusted</string>
+    <string name="color">Color</string>
+    <string name="colorRed">Red</string>
+    <string name="colorBlue">Blue</string>
+    <string name="colorGreen">Green</string>
+    <string name="colorYellow">Yellow</string>
+    <string name="changeBrightness">Brightness: </string>
+    <!-- Timer -->
+    <string name="timer">Timer</string>
+    <string name="setInterval">Interval</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="timeIsUp">Timer Finished!</string>
+    <string name="newTimer">Create New Timer</string>
+    <string name="inactive">Inactive</string>
+    <string name="active">Active</string>
+    <string name="timeRemaining">, time remaining: </string>
+
+
+
+    <string name="mode_prompt">Select Mode</string>
+    <string-array name="mode_items">
+            <item>Cool</item>
+            <item>Heat</item>
+            <item>Fan</item>
+    </string-array>
+
+    <string-array name="verticalSwing_items">
+        <item>Auto</item>
+        <item>22</item>
+        <item>45</item>
+        <item>67</item>
+        <item>90</item>
+    </string-array>
+
+    <string-array name="horizontalSwing_items">
+        <item>Auto</item>
+        <item>-90</item>
+        <item>-45</item>
+        <item>0</item>
+        <item>45</item>
+        <item>90</item>
+    </string-array>
+
+    <string-array name="fanSpeed_items">
+        <item>Auto</item>
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+    </string-array>
+
+    <!--Bottom Bar-->
+    <string name="title_rooms">Rooms</string>
+    <string name="title_devices">Devices</string>
+    <string name="title_combos">Combos</string>
+</resources>
